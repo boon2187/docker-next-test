@@ -3,7 +3,7 @@ services:
  app:
   build:
     context: .
-  container_name: node18-14-0-2
+  container_name: node18-14-0
   tty: true
   volumes:
     - ./blog-app:/app
@@ -11,3 +11,4 @@ services:
     - WATCHPACK_POLLING=true
   ports:
     - "3000:3000"
+    
